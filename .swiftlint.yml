@@ -1,0 +1,26 @@
+warning_threshold: 100 # allow max 100 warnings, then show error
+
+excluded: # paths to ignore during linting.
+  - Pods
+  - Carthage
+  - crypto-marketplace/SwiftGen
+
+disabled_rules:
+  - line_length
+  - trailing_whitespace
+  - statement_position
+  - force_cast
+  - vertical_whitespace
+  - redundant_string_enum_value
+  - unused_closure_parameter
+  - nesting
+  - identifier_name
+  - large_tuple
+  - force_try
+  - todo
+
+#rule parameters
+type_name:
+  max_length:
+    warning: 50
+    error: 60

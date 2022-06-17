@@ -1,0 +1,5 @@
+strings:
+  - inputs: crypto-marketplace/Resources/en.lproj/Localizable.strings
+    outputs:
+      - templateName: structured-swift5
+        output: crypto-marketplace/SwiftGen/StringsGen.swift

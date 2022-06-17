@@ -7,7 +7,7 @@
 
 import XCTest
 
-class crypto_marketplaceUITestsLaunchTests: XCTestCase {
+class CryptoMarketplaceUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
