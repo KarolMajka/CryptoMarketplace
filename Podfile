@@ -31,8 +31,4 @@ target 'crypto-marketplace' do
     pod "SwiftyMocky"
   end
 
-  target 'crypto-marketplaceUITests' do
-
-  end
-
 end
