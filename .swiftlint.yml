@@ -4,6 +4,7 @@ excluded: # paths to ignore during linting.
   - Pods
   - Carthage
   - crypto-marketplace/SwiftGen
+  - crypto-marketplaceTests/**/*.generated.swift
 
 disabled_rules:
   - line_length

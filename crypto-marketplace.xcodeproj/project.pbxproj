@@ -47,7 +47,7 @@
 		F948136A285F56CA00A0EAE8 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481369285F56CA00A0EAE8 /* CellViewModel.swift */; };
 		F948136C285F5A8F00A0EAE8 /* Observable+FilterNill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948136B285F5A8F00A0EAE8 /* Observable+FilterNill.swift */; };
 		F9B04067285F73D80026947D /* UIColor+AppearanceMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */; };
-		F9B04069285F7B110026947D /* BitfinexServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04068285F7B110026947D /* BitfinexServiceTests.swift */; };
+		F9B04069285F7B110026947D /* BitfinexTickersParamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04068285F7B110026947D /* BitfinexTickersParamsTests.swift */; };
 		F9B0406C285F7C4F0026947D /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0406B285F7C4F0026947D /* Mock.generated.swift */; };
 /* End PBXBuildFile section */
 
@@ -111,7 +111,7 @@
 		F9481369285F56CA00A0EAE8 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		F948136B285F5A8F00A0EAE8 /* Observable+FilterNill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+FilterNill.swift"; sourceTree = "<group>"; };
 		F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppearanceMode.swift"; sourceTree = "<group>"; };
-		F9B04068285F7B110026947D /* BitfinexServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexServiceTests.swift; sourceTree = "<group>"; };
+		F9B04068285F7B110026947D /* BitfinexTickersParamsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexTickersParamsTests.swift; sourceTree = "<group>"; };
 		F9B0406B285F7C4F0026947D /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
 		FDA7453C1E8A7B4E2FF4606E /* Pods-crypto-marketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-marketplace.debug.xcconfig"; path = "Target Support Files/Pods-crypto-marketplace/Pods-crypto-marketplace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				F9B0406A285F7BC10026947D /* Mocks */,
-				F9B04068285F7B110026947D /* BitfinexServiceTests.swift */,
+				F9B04068285F7B110026947D /* BitfinexTickersParamsTests.swift */,
 			);
 			path = "crypto-marketplaceTests";
 			sourceTree = "<group>";
@@ -594,7 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9B0406C285F7C4F0026947D /* Mock.generated.swift in Sources */,
-				F9B04069285F7B110026947D /* BitfinexServiceTests.swift in Sources */,
+				F9B04069285F7B110026947D /* BitfinexTickersParamsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
