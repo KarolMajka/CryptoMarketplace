@@ -28,6 +28,7 @@ target 'crypto-marketplace' do
   target 'crypto-marketplaceTests' do
     inherit! :search_paths
 
+    pod "SwiftyMocky"
   end
 
   target 'crypto-marketplaceUITests' do

@@ -14,7 +14,6 @@
 		F94812E5285CE73100A0EAE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94812E4285CE73100A0EAE8 /* SceneDelegate.swift */; };
 		F94812EC285CE73200A0EAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F94812EB285CE73200A0EAE8 /* Assets.xcassets */; };
 		F94812EF285CE73200A0EAE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94812ED285CE73200A0EAE8 /* LaunchScreen.storyboard */; };
-		F94812FA285CE73200A0EAE8 /* crypto_marketplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94812F9285CE73200A0EAE8 /* crypto_marketplaceTests.swift */; };
 		F9481304285CE73300A0EAE8 /* crypto_marketplaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481303285CE73300A0EAE8 /* crypto_marketplaceUITests.swift */; };
 		F9481306285CE73300A0EAE8 /* crypto_marketplaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481305285CE73300A0EAE8 /* crypto_marketplaceUITestsLaunchTests.swift */; };
 		F9481314285D117B00A0EAE8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481313285D117B00A0EAE8 /* Constants.swift */; };
@@ -51,6 +50,8 @@
 		F948136A285F56CA00A0EAE8 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481369285F56CA00A0EAE8 /* CellViewModel.swift */; };
 		F948136C285F5A8F00A0EAE8 /* Observable+FilterNill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948136B285F5A8F00A0EAE8 /* Observable+FilterNill.swift */; };
 		F9B04067285F73D80026947D /* UIColor+AppearanceMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */; };
+		F9B04069285F7B110026947D /* BitfinexServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04068285F7B110026947D /* BitfinexServiceTests.swift */; };
+		F9B0406C285F7C4F0026947D /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0406B285F7C4F0026947D /* Mock.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +87,6 @@
 		F94812EE285CE73200A0EAE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F94812F0285CE73200A0EAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F94812F5285CE73200A0EAE8 /* crypto-marketplaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crypto-marketplaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F94812F9285CE73200A0EAE8 /* crypto_marketplaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_marketplaceTests.swift; sourceTree = "<group>"; };
 		F94812FF285CE73300A0EAE8 /* crypto-marketplaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crypto-marketplaceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9481303285CE73300A0EAE8 /* crypto_marketplaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_marketplaceUITests.swift; sourceTree = "<group>"; };
 		F9481305285CE73300A0EAE8 /* crypto_marketplaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crypto_marketplaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -124,6 +124,8 @@
 		F9481369285F56CA00A0EAE8 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		F948136B285F5A8F00A0EAE8 /* Observable+FilterNill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+FilterNill.swift"; sourceTree = "<group>"; };
 		F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppearanceMode.swift"; sourceTree = "<group>"; };
+		F9B04068285F7B110026947D /* BitfinexServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexServiceTests.swift; sourceTree = "<group>"; };
+		F9B0406B285F7C4F0026947D /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
 		FDA7453C1E8A7B4E2FF4606E /* Pods-crypto-marketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-marketplace.debug.xcconfig"; path = "Target Support Files/Pods-crypto-marketplace/Pods-crypto-marketplace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,7 +224,8 @@
 		F94812F8285CE73200A0EAE8 /* crypto-marketplaceTests */ = {
 			isa = PBXGroup;
 			children = (
-				F94812F9285CE73200A0EAE8 /* crypto_marketplaceTests.swift */,
+				F9B0406A285F7BC10026947D /* Mocks */,
+				F9B04068285F7B110026947D /* BitfinexServiceTests.swift */,
 			);
 			path = "crypto-marketplaceTests";
 			sourceTree = "<group>";
@@ -367,6 +370,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		F9B0406A285F7BC10026947D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F9B0406B285F7C4F0026947D /* Mock.generated.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,6 +409,7 @@
 				F94812F1285CE73200A0EAE8 /* Sources */,
 				F94812F2285CE73200A0EAE8 /* Frameworks */,
 				F94812F3285CE73200A0EAE8 /* Resources */,
+				633F55FD3D09FCE480E80D8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -561,6 +573,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		633F55FD3D09FCE480E80D8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-crypto-marketplaceTests/Pods-crypto-marketplaceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-crypto-marketplaceTests/Pods-crypto-marketplaceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-crypto-marketplaceTests/Pods-crypto-marketplaceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A0E359C473E126E4957D1C56 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -667,7 +696,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94812FA285CE73200A0EAE8 /* crypto_marketplaceTests.swift in Sources */,
+				F9B0406C285F7C4F0026947D /* Mock.generated.swift in Sources */,
+				F9B04069285F7B110026947D /* BitfinexServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

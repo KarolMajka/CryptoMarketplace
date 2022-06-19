@@ -1,0 +1,13 @@
+sourceryCommand: null
+crypto-marketplaceTests:
+  sources:
+    include:
+    - ./crypto-marketplace
+  output: ./crypto-marketplaceTests/Mocks/Mock.generated.swift
+  targets:
+  - crypto-marketplaceTests
+  testable:
+  - crypto_marketplace
+  import:
+  - Foundation
+  - RxSwift

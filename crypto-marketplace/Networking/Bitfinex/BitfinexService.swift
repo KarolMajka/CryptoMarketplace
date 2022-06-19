@@ -8,6 +8,7 @@
 import Moya
 import RxSwift
 
+// sourcery: AutoMockable
 protocol BitfinexServiceProtocol {
     func getTickers(params: BitfinexTickersParams) -> Single<BitfinexTickersResponse>
 }
