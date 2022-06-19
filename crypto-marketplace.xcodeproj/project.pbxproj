@@ -22,6 +22,22 @@
 		F9481314285D117B00A0EAE8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481313285D117B00A0EAE8 /* Constants.swift */; };
 		F9481319285D182500A0EAE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F948131B285D182500A0EAE8 /* Localizable.strings */; };
 		F948131D285D1ACC00A0EAE8 /* StringsGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948131C285D1ACC00A0EAE8 /* StringsGen.swift */; };
+		F9481321285D1E4C00A0EAE8 /* BitfinexTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481320285D1E4C00A0EAE8 /* BitfinexTarget.swift */; };
+		F9481323285D1E5500A0EAE8 /* BitfinexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481322285D1E5500A0EAE8 /* BitfinexService.swift */; };
+		F9481329285D221E00A0EAE8 /* BitfinexCoinType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481328285D221E00A0EAE8 /* BitfinexCoinType.swift */; };
+		F948132B285D235100A0EAE8 /* BitfinexTickersParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948132A285D235100A0EAE8 /* BitfinexTickersParams.swift */; };
+		F948132D285D23D700A0EAE8 /* BitfinexTickerSymbolsParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948132C285D23D700A0EAE8 /* BitfinexTickerSymbolsParam.swift */; };
+		F948132F285D242400A0EAE8 /* NetworkingParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948132E285D242400A0EAE8 /* NetworkingParam.swift */; };
+		F9481331285D259600A0EAE8 /* NetworkingParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481330285D259600A0EAE8 /* NetworkingParams.swift */; };
+		F9481333285DE66A00A0EAE8 /* PrimitiveSequenceType+ErrorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481332285DE66A00A0EAE8 /* PrimitiveSequenceType+ErrorLog.swift */; };
+		F9481335285DE7C000A0EAE8 /* Response+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481334285DE7C000A0EAE8 /* Response+ErrorHandling.swift */; };
+		F9481338285DE7F900A0EAE8 /* BitfinexErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481337285DE7F900A0EAE8 /* BitfinexErrorResponse.swift */; };
+		F948133A285DE80500A0EAE8 /* BitfinexError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481339285DE80500A0EAE8 /* BitfinexError.swift */; };
+		F948133C285E6EBF00A0EAE8 /* BitfinexTickersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948133B285E6EBF00A0EAE8 /* BitfinexTickersResponse.swift */; };
+		F948133E285E6F2000A0EAE8 /* BitfinexTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948133D285E6F2000A0EAE8 /* BitfinexTicker.swift */; };
+		F9481342285E716F00A0EAE8 /* Collection+SafeAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481341285E716F00A0EAE8 /* Collection+SafeAccess.swift */; };
+		F9481344285E725800A0EAE8 /* JSONDecoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481343285E725800A0EAE8 /* JSONDecoder+Default.swift */; };
+		F9481346285EE30200A0EAE8 /* BitfinexCoinPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481345285EE30200A0EAE8 /* BitfinexCoinPair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +82,22 @@
 		F9481313285D117B00A0EAE8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F948131A285D182500A0EAE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F948131C285D1ACC00A0EAE8 /* StringsGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsGen.swift; sourceTree = "<group>"; };
+		F9481320285D1E4C00A0EAE8 /* BitfinexTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexTarget.swift; sourceTree = "<group>"; };
+		F9481322285D1E5500A0EAE8 /* BitfinexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexService.swift; sourceTree = "<group>"; };
+		F9481328285D221E00A0EAE8 /* BitfinexCoinType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexCoinType.swift; sourceTree = "<group>"; };
+		F948132A285D235100A0EAE8 /* BitfinexTickersParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexTickersParams.swift; sourceTree = "<group>"; };
+		F948132C285D23D700A0EAE8 /* BitfinexTickerSymbolsParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexTickerSymbolsParam.swift; sourceTree = "<group>"; };
+		F948132E285D242400A0EAE8 /* NetworkingParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingParam.swift; sourceTree = "<group>"; };
+		F9481330285D259600A0EAE8 /* NetworkingParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingParams.swift; sourceTree = "<group>"; };
+		F9481332285DE66A00A0EAE8 /* PrimitiveSequenceType+ErrorLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimitiveSequenceType+ErrorLog.swift"; sourceTree = "<group>"; };
+		F9481334285DE7C000A0EAE8 /* Response+ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+ErrorHandling.swift"; sourceTree = "<group>"; };
+		F9481337285DE7F900A0EAE8 /* BitfinexErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexErrorResponse.swift; sourceTree = "<group>"; };
+		F9481339285DE80500A0EAE8 /* BitfinexError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexError.swift; sourceTree = "<group>"; };
+		F948133B285E6EBF00A0EAE8 /* BitfinexTickersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexTickersResponse.swift; sourceTree = "<group>"; };
+		F948133D285E6F2000A0EAE8 /* BitfinexTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexTicker.swift; sourceTree = "<group>"; };
+		F9481341285E716F00A0EAE8 /* Collection+SafeAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeAccess.swift"; sourceTree = "<group>"; };
+		F9481343285E725800A0EAE8 /* JSONDecoder+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Default.swift"; sourceTree = "<group>"; };
+		F9481345285EE30200A0EAE8 /* BitfinexCoinPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexCoinPair.swift; sourceTree = "<group>"; };
 		FDA7453C1E8A7B4E2FF4606E /* Pods-crypto-marketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-marketplace.debug.xcconfig"; path = "Target Support Files/Pods-crypto-marketplace/Pods-crypto-marketplace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +184,9 @@
 				F94812E8285CE73100A0EAE8 /* Main.storyboard */,
 				F94812EB285CE73200A0EAE8 /* Assets.xcassets */,
 				F94812ED285CE73200A0EAE8 /* LaunchScreen.storyboard */,
+				F9481325285D200C00A0EAE8 /* Models */,
 				F9481312285D113D00A0EAE8 /* Networking */,
+				F9481340285E712A00A0EAE8 /* Extensions */,
 				F9481316285D170100A0EAE8 /* Resources */,
 				F9481315285D16D900A0EAE8 /* SwiftGen */,
 				F94812F0285CE73200A0EAE8 /* Info.plist */,
@@ -180,6 +214,10 @@
 		F9481312285D113D00A0EAE8 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F948132E285D242400A0EAE8 /* NetworkingParam.swift */,
+				F9481330285D259600A0EAE8 /* NetworkingParams.swift */,
+				F948131F285D1E1400A0EAE8 /* Bitfinex */,
+				F9481336285DE7C500A0EAE8 /* Extensions */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -198,6 +236,64 @@
 				F948131B285D182500A0EAE8 /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F948131F285D1E1400A0EAE8 /* Bitfinex */ = {
+			isa = PBXGroup;
+			children = (
+				F9481320285D1E4C00A0EAE8 /* BitfinexTarget.swift */,
+				F9481322285D1E5500A0EAE8 /* BitfinexService.swift */,
+				F9481324285D1E7A00A0EAE8 /* Models */,
+			);
+			path = Bitfinex;
+			sourceTree = "<group>";
+		};
+		F9481324285D1E7A00A0EAE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9481328285D221E00A0EAE8 /* BitfinexCoinType.swift */,
+				F9481345285EE30200A0EAE8 /* BitfinexCoinPair.swift */,
+				F9481337285DE7F900A0EAE8 /* BitfinexErrorResponse.swift */,
+				F9481339285DE80500A0EAE8 /* BitfinexError.swift */,
+				F948133F285E6F2600A0EAE8 /* Ticker */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9481325285D200C00A0EAE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9481336285DE7C500A0EAE8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9481332285DE66A00A0EAE8 /* PrimitiveSequenceType+ErrorLog.swift */,
+				F9481334285DE7C000A0EAE8 /* Response+ErrorHandling.swift */,
+				F9481343285E725800A0EAE8 /* JSONDecoder+Default.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F948133F285E6F2600A0EAE8 /* Ticker */ = {
+			isa = PBXGroup;
+			children = (
+				F948132A285D235100A0EAE8 /* BitfinexTickersParams.swift */,
+				F948132C285D23D700A0EAE8 /* BitfinexTickerSymbolsParam.swift */,
+				F948133B285E6EBF00A0EAE8 /* BitfinexTickersResponse.swift */,
+				F948133D285E6F2000A0EAE8 /* BitfinexTicker.swift */,
+			);
+			path = Ticker;
+			sourceTree = "<group>";
+		};
+		F9481340285E712A00A0EAE8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9481341285E716F00A0EAE8 /* Collection+SafeAccess.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,11 +555,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F948133E285E6F2000A0EAE8 /* BitfinexTicker.swift in Sources */,
+				F9481342285E716F00A0EAE8 /* Collection+SafeAccess.swift in Sources */,
+				F948133C285E6EBF00A0EAE8 /* BitfinexTickersResponse.swift in Sources */,
 				F94812E7285CE73100A0EAE8 /* ViewController.swift in Sources */,
+				F948133A285DE80500A0EAE8 /* BitfinexError.swift in Sources */,
 				F948131D285D1ACC00A0EAE8 /* StringsGen.swift in Sources */,
 				F94812E3285CE73100A0EAE8 /* AppDelegate.swift in Sources */,
+				F9481333285DE66A00A0EAE8 /* PrimitiveSequenceType+ErrorLog.swift in Sources */,
+				F9481338285DE7F900A0EAE8 /* BitfinexErrorResponse.swift in Sources */,
 				F94812E5285CE73100A0EAE8 /* SceneDelegate.swift in Sources */,
+				F9481321285D1E4C00A0EAE8 /* BitfinexTarget.swift in Sources */,
+				F9481335285DE7C000A0EAE8 /* Response+ErrorHandling.swift in Sources */,
+				F9481331285D259600A0EAE8 /* NetworkingParams.swift in Sources */,
+				F9481323285D1E5500A0EAE8 /* BitfinexService.swift in Sources */,
+				F948132B285D235100A0EAE8 /* BitfinexTickersParams.swift in Sources */,
+				F948132D285D23D700A0EAE8 /* BitfinexTickerSymbolsParam.swift in Sources */,
+				F9481346285EE30200A0EAE8 /* BitfinexCoinPair.swift in Sources */,
+				F9481344285E725800A0EAE8 /* JSONDecoder+Default.swift in Sources */,
+				F948132F285D242400A0EAE8 /* NetworkingParam.swift in Sources */,
 				F9481314285D117B00A0EAE8 /* Constants.swift in Sources */,
+				F9481329285D221E00A0EAE8 /* BitfinexCoinType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

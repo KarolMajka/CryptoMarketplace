@@ -17,7 +17,7 @@ disabled_rules:
   - identifier_name
   - large_tuple
   - force_try
-  - todo
+  - trailing_comma
 
 #rule parameters
 type_name:
