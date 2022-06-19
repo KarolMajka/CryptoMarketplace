@@ -11,7 +11,6 @@ enum BitfinexTarget {
     case tickers(params: BitfinexTickersParams)
 }
 
-
 extension BitfinexTarget: TargetType {
     static let provider = MoyaProvider<Self>()
 

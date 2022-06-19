@@ -12,8 +12,6 @@
 		C267D4707D430CA295ED72BE /* Pods_crypto_marketplace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E9175FE7F4CF09426D0940 /* Pods_crypto_marketplace.framework */; };
 		F94812E3285CE73100A0EAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94812E2285CE73100A0EAE8 /* AppDelegate.swift */; };
 		F94812E5285CE73100A0EAE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94812E4285CE73100A0EAE8 /* SceneDelegate.swift */; };
-		F94812E7285CE73100A0EAE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94812E6285CE73100A0EAE8 /* ViewController.swift */; };
-		F94812EA285CE73100A0EAE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94812E8285CE73100A0EAE8 /* Main.storyboard */; };
 		F94812EC285CE73200A0EAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F94812EB285CE73200A0EAE8 /* Assets.xcassets */; };
 		F94812EF285CE73200A0EAE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94812ED285CE73200A0EAE8 /* LaunchScreen.storyboard */; };
 		F94812FA285CE73200A0EAE8 /* crypto_marketplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94812F9285CE73200A0EAE8 /* crypto_marketplaceTests.swift */; };
@@ -38,6 +36,21 @@
 		F9481342285E716F00A0EAE8 /* Collection+SafeAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481341285E716F00A0EAE8 /* Collection+SafeAccess.swift */; };
 		F9481344285E725800A0EAE8 /* JSONDecoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481343285E725800A0EAE8 /* JSONDecoder+Default.swift */; };
 		F9481346285EE30200A0EAE8 /* BitfinexCoinPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481345285EE30200A0EAE8 /* BitfinexCoinPair.swift */; };
+		F948134A285EF39800A0EAE8 /* CryptoMarketplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481349285EF39700A0EAE8 /* CryptoMarketplaceViewController.swift */; };
+		F948134C285EF3AB00A0EAE8 /* CryptoMarketplaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948134B285EF3AB00A0EAE8 /* CryptoMarketplaceViewModel.swift */; };
+		F9481350285EF5FE00A0EAE8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948134F285EF5FE00A0EAE8 /* AppCoordinator.swift */; };
+		F9481353285EF68A00A0EAE8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481352285EF68A00A0EAE8 /* Coordinator.swift */; };
+		F9481355285EF7A700A0EAE8 /* UIWindow+RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481354285EF7A700A0EAE8 /* UIWindow+RootViewController.swift */; };
+		F9481357285EF7DF00A0EAE8 /* CryptoMarketplaceCoinPairsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481356285EF7DF00A0EAE8 /* CryptoMarketplaceCoinPairsBuilder.swift */; };
+		F9481359285EF89700A0EAE8 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481358285EF89700A0EAE8 /* ActivityIndicator.swift */; };
+		F948135C285F1A5300A0EAE8 /* CryptoMarketplaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948135B285F1A5300A0EAE8 /* CryptoMarketplaceTableViewCell.swift */; };
+		F948135E285F27AA00A0EAE8 /* CryptoMarketplaceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948135D285F27AA00A0EAE8 /* CryptoMarketplaceCellViewModel.swift */; };
+		F9481360285F2DA200A0EAE8 /* CryptoMarketplacePriceChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948135F285F2DA200A0EAE8 /* CryptoMarketplacePriceChange.swift */; };
+		F9481363285F548800A0EAE8 /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481362285F548800A0EAE8 /* UITableView+Register.swift */; };
+		F9481365285F552900A0EAE8 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481364285F552900A0EAE8 /* ReusableView.swift */; };
+		F948136A285F56CA00A0EAE8 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481369285F56CA00A0EAE8 /* CellViewModel.swift */; };
+		F948136C285F5A8F00A0EAE8 /* Observable+FilterNill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948136B285F5A8F00A0EAE8 /* Observable+FilterNill.swift */; };
+		F9B04067285F73D80026947D /* UIColor+AppearanceMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +82,6 @@
 		F94812DF285CE73100A0EAE8 /* crypto-marketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crypto-marketplace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94812E2285CE73100A0EAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F94812E4285CE73100A0EAE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F94812E6285CE73100A0EAE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F94812E9285CE73100A0EAE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F94812EB285CE73200A0EAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F94812EE285CE73200A0EAE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F94812F0285CE73200A0EAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +109,21 @@
 		F9481341285E716F00A0EAE8 /* Collection+SafeAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+SafeAccess.swift"; sourceTree = "<group>"; };
 		F9481343285E725800A0EAE8 /* JSONDecoder+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Default.swift"; sourceTree = "<group>"; };
 		F9481345285EE30200A0EAE8 /* BitfinexCoinPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexCoinPair.swift; sourceTree = "<group>"; };
+		F9481349285EF39700A0EAE8 /* CryptoMarketplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceViewController.swift; sourceTree = "<group>"; };
+		F948134B285EF3AB00A0EAE8 /* CryptoMarketplaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceViewModel.swift; sourceTree = "<group>"; };
+		F948134F285EF5FE00A0EAE8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F9481352285EF68A00A0EAE8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F9481354285EF7A700A0EAE8 /* UIWindow+RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+RootViewController.swift"; sourceTree = "<group>"; };
+		F9481356285EF7DF00A0EAE8 /* CryptoMarketplaceCoinPairsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceCoinPairsBuilder.swift; sourceTree = "<group>"; };
+		F9481358285EF89700A0EAE8 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		F948135B285F1A5300A0EAE8 /* CryptoMarketplaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceTableViewCell.swift; sourceTree = "<group>"; };
+		F948135D285F27AA00A0EAE8 /* CryptoMarketplaceCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceCellViewModel.swift; sourceTree = "<group>"; };
+		F948135F285F2DA200A0EAE8 /* CryptoMarketplacePriceChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplacePriceChange.swift; sourceTree = "<group>"; };
+		F9481362285F548800A0EAE8 /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		F9481364285F552900A0EAE8 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		F9481369285F56CA00A0EAE8 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		F948136B285F5A8F00A0EAE8 /* Observable+FilterNill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+FilterNill.swift"; sourceTree = "<group>"; };
+		F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppearanceMode.swift"; sourceTree = "<group>"; };
 		FDA7453C1E8A7B4E2FF4606E /* Pods-crypto-marketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-marketplace.debug.xcconfig"; path = "Target Support Files/Pods-crypto-marketplace/Pods-crypto-marketplace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,11 +205,10 @@
 			children = (
 				F9481313285D117B00A0EAE8 /* Constants.swift */,
 				F94812E2285CE73100A0EAE8 /* AppDelegate.swift */,
+				F948134F285EF5FE00A0EAE8 /* AppCoordinator.swift */,
 				F94812E4285CE73100A0EAE8 /* SceneDelegate.swift */,
-				F94812E6285CE73100A0EAE8 /* ViewController.swift */,
-				F94812E8285CE73100A0EAE8 /* Main.storyboard */,
-				F94812EB285CE73200A0EAE8 /* Assets.xcassets */,
-				F94812ED285CE73200A0EAE8 /* LaunchScreen.storyboard */,
+				F9481351285EF60B00A0EAE8 /* Base */,
+				F9481347285EF34700A0EAE8 /* ViewControllers */,
 				F9481325285D200C00A0EAE8 /* Models */,
 				F9481312285D113D00A0EAE8 /* Networking */,
 				F9481340285E712A00A0EAE8 /* Extensions */,
@@ -233,6 +258,8 @@
 		F9481316285D170100A0EAE8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F94812ED285CE73200A0EAE8 /* LaunchScreen.storyboard */,
+				F94812EB285CE73200A0EAE8 /* Assets.xcassets */,
 				F948131B285D182500A0EAE8 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -292,8 +319,52 @@
 			isa = PBXGroup;
 			children = (
 				F9481341285E716F00A0EAE8 /* Collection+SafeAccess.swift */,
+				F9481354285EF7A700A0EAE8 /* UIWindow+RootViewController.swift */,
+				F9481362285F548800A0EAE8 /* UITableView+Register.swift */,
+				F948136B285F5A8F00A0EAE8 /* Observable+FilterNill.swift */,
+				F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F9481347285EF34700A0EAE8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9481348285EF35E00A0EAE8 /* CryptoMarketplace */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9481348285EF35E00A0EAE8 /* CryptoMarketplace */ = {
+			isa = PBXGroup;
+			children = (
+				F9481349285EF39700A0EAE8 /* CryptoMarketplaceViewController.swift */,
+				F948134B285EF3AB00A0EAE8 /* CryptoMarketplaceViewModel.swift */,
+				F9481356285EF7DF00A0EAE8 /* CryptoMarketplaceCoinPairsBuilder.swift */,
+				F948135A285F1A3E00A0EAE8 /* Cell */,
+			);
+			path = CryptoMarketplace;
+			sourceTree = "<group>";
+		};
+		F9481351285EF60B00A0EAE8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F9481352285EF68A00A0EAE8 /* Coordinator.swift */,
+				F9481358285EF89700A0EAE8 /* ActivityIndicator.swift */,
+				F9481364285F552900A0EAE8 /* ReusableView.swift */,
+				F9481369285F56CA00A0EAE8 /* CellViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F948135A285F1A3E00A0EAE8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F948135B285F1A5300A0EAE8 /* CryptoMarketplaceTableViewCell.swift */,
+				F948135D285F27AA00A0EAE8 /* CryptoMarketplaceCellViewModel.swift */,
+				F948135F285F2DA200A0EAE8 /* CryptoMarketplacePriceChange.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,7 +480,6 @@
 				F94812EF285CE73200A0EAE8 /* LaunchScreen.storyboard in Resources */,
 				F9481319285D182500A0EAE8 /* Localizable.strings in Resources */,
 				F94812EC285CE73200A0EAE8 /* Assets.xcassets in Resources */,
-				F94812EA285CE73100A0EAE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,24 +628,38 @@
 				F948133E285E6F2000A0EAE8 /* BitfinexTicker.swift in Sources */,
 				F9481342285E716F00A0EAE8 /* Collection+SafeAccess.swift in Sources */,
 				F948133C285E6EBF00A0EAE8 /* BitfinexTickersResponse.swift in Sources */,
-				F94812E7285CE73100A0EAE8 /* ViewController.swift in Sources */,
+				F9481359285EF89700A0EAE8 /* ActivityIndicator.swift in Sources */,
 				F948133A285DE80500A0EAE8 /* BitfinexError.swift in Sources */,
 				F948131D285D1ACC00A0EAE8 /* StringsGen.swift in Sources */,
 				F94812E3285CE73100A0EAE8 /* AppDelegate.swift in Sources */,
 				F9481333285DE66A00A0EAE8 /* PrimitiveSequenceType+ErrorLog.swift in Sources */,
+				F9481360285F2DA200A0EAE8 /* CryptoMarketplacePriceChange.swift in Sources */,
+				F948136A285F56CA00A0EAE8 /* CellViewModel.swift in Sources */,
+				F948135C285F1A5300A0EAE8 /* CryptoMarketplaceTableViewCell.swift in Sources */,
 				F9481338285DE7F900A0EAE8 /* BitfinexErrorResponse.swift in Sources */,
 				F94812E5285CE73100A0EAE8 /* SceneDelegate.swift in Sources */,
+				F948134C285EF3AB00A0EAE8 /* CryptoMarketplaceViewModel.swift in Sources */,
 				F9481321285D1E4C00A0EAE8 /* BitfinexTarget.swift in Sources */,
+				F9481350285EF5FE00A0EAE8 /* AppCoordinator.swift in Sources */,
 				F9481335285DE7C000A0EAE8 /* Response+ErrorHandling.swift in Sources */,
 				F9481331285D259600A0EAE8 /* NetworkingParams.swift in Sources */,
 				F9481323285D1E5500A0EAE8 /* BitfinexService.swift in Sources */,
 				F948132B285D235100A0EAE8 /* BitfinexTickersParams.swift in Sources */,
 				F948132D285D23D700A0EAE8 /* BitfinexTickerSymbolsParam.swift in Sources */,
+				F9B04067285F73D80026947D /* UIColor+AppearanceMode.swift in Sources */,
 				F9481346285EE30200A0EAE8 /* BitfinexCoinPair.swift in Sources */,
+				F9481363285F548800A0EAE8 /* UITableView+Register.swift in Sources */,
 				F9481344285E725800A0EAE8 /* JSONDecoder+Default.swift in Sources */,
+				F9481355285EF7A700A0EAE8 /* UIWindow+RootViewController.swift in Sources */,
 				F948132F285D242400A0EAE8 /* NetworkingParam.swift in Sources */,
+				F948136C285F5A8F00A0EAE8 /* Observable+FilterNill.swift in Sources */,
+				F9481357285EF7DF00A0EAE8 /* CryptoMarketplaceCoinPairsBuilder.swift in Sources */,
 				F9481314285D117B00A0EAE8 /* Constants.swift in Sources */,
+				F9481365285F552900A0EAE8 /* ReusableView.swift in Sources */,
+				F9481353285EF68A00A0EAE8 /* Coordinator.swift in Sources */,
+				F948134A285EF39800A0EAE8 /* CryptoMarketplaceViewController.swift in Sources */,
 				F9481329285D221E00A0EAE8 /* BitfinexCoinType.swift in Sources */,
+				F948135E285F27AA00A0EAE8 /* CryptoMarketplaceCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,14 +696,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F94812E8285CE73100A0EAE8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F94812E9285CE73100A0EAE8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F94812ED285CE73200A0EAE8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -767,7 +843,6 @@
 				INFOPLIST_FILE = "crypto-marketplace/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -795,7 +870,6 @@
 				INFOPLIST_FILE = "crypto-marketplace/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
