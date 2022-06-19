@@ -49,6 +49,9 @@
 		F9B04067285F73D80026947D /* UIColor+AppearanceMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */; };
 		F9B04069285F7B110026947D /* BitfinexTickersParamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04068285F7B110026947D /* BitfinexTickersParamsTests.swift */; };
 		F9B0406C285F7C4F0026947D /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0406B285F7C4F0026947D /* Mock.generated.swift */; };
+		F9B0406E285F8CFF0026947D /* CryptoMarketplaceSearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0406D285F8CFF0026947D /* CryptoMarketplaceSearchFilter.swift */; };
+		F9B04070285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0406F285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift */; };
+		F9B04073285F97220026947D /* CryptoMarketplaceSearchFilterContains.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04072285F97220026947D /* CryptoMarketplaceSearchFilterContains.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppearanceMode.swift"; sourceTree = "<group>"; };
 		F9B04068285F7B110026947D /* BitfinexTickersParamsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexTickersParamsTests.swift; sourceTree = "<group>"; };
 		F9B0406B285F7C4F0026947D /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		F9B0406D285F8CFF0026947D /* CryptoMarketplaceSearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceSearchFilter.swift; sourceTree = "<group>"; };
+		F9B0406F285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceSearchFilterContainsTests.swift; sourceTree = "<group>"; };
+		F9B04072285F97220026947D /* CryptoMarketplaceSearchFilterContains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceSearchFilterContains.swift; sourceTree = "<group>"; };
 		FDA7453C1E8A7B4E2FF4606E /* Pods-crypto-marketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-marketplace.debug.xcconfig"; path = "Target Support Files/Pods-crypto-marketplace/Pods-crypto-marketplace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +209,7 @@
 			children = (
 				F9B0406A285F7BC10026947D /* Mocks */,
 				F9B04068285F7B110026947D /* BitfinexTickersParamsTests.swift */,
+				F9B0406F285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift */,
 			);
 			path = "crypto-marketplaceTests";
 			sourceTree = "<group>";
@@ -309,10 +316,11 @@
 		F9481348285EF35E00A0EAE8 /* CryptoMarketplace */ = {
 			isa = PBXGroup;
 			children = (
+				F9B04071285F97110026947D /* CryptoMarketplaceSearchFilter */,
+				F948135A285F1A3E00A0EAE8 /* Cell */,
 				F9481349285EF39700A0EAE8 /* CryptoMarketplaceViewController.swift */,
 				F948134B285EF3AB00A0EAE8 /* CryptoMarketplaceViewModel.swift */,
 				F9481356285EF7DF00A0EAE8 /* CryptoMarketplaceCoinPairsBuilder.swift */,
-				F948135A285F1A3E00A0EAE8 /* Cell */,
 			);
 			path = CryptoMarketplace;
 			sourceTree = "<group>";
@@ -344,6 +352,15 @@
 				F9B0406B285F7C4F0026947D /* Mock.generated.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F9B04071285F97110026947D /* CryptoMarketplaceSearchFilter */ = {
+			isa = PBXGroup;
+			children = (
+				F9B0406D285F8CFF0026947D /* CryptoMarketplaceSearchFilter.swift */,
+				F9B04072285F97220026947D /* CryptoMarketplaceSearchFilterContains.swift */,
+			);
+			path = CryptoMarketplaceSearchFilter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -562,6 +579,7 @@
 				F9481360285F2DA200A0EAE8 /* CryptoMarketplacePriceChange.swift in Sources */,
 				F948136A285F56CA00A0EAE8 /* CellViewModel.swift in Sources */,
 				F948135C285F1A5300A0EAE8 /* CryptoMarketplaceTableViewCell.swift in Sources */,
+				F9B04073285F97220026947D /* CryptoMarketplaceSearchFilterContains.swift in Sources */,
 				F9481338285DE7F900A0EAE8 /* BitfinexErrorResponse.swift in Sources */,
 				F94812E5285CE73100A0EAE8 /* SceneDelegate.swift in Sources */,
 				F948134C285EF3AB00A0EAE8 /* CryptoMarketplaceViewModel.swift in Sources */,
@@ -575,6 +593,7 @@
 				F9B04067285F73D80026947D /* UIColor+AppearanceMode.swift in Sources */,
 				F9481346285EE30200A0EAE8 /* BitfinexCoinPair.swift in Sources */,
 				F9481363285F548800A0EAE8 /* UITableView+Register.swift in Sources */,
+				F9B0406E285F8CFF0026947D /* CryptoMarketplaceSearchFilter.swift in Sources */,
 				F9481344285E725800A0EAE8 /* JSONDecoder+Default.swift in Sources */,
 				F9481355285EF7A700A0EAE8 /* UIWindow+RootViewController.swift in Sources */,
 				F948132F285D242400A0EAE8 /* NetworkingParam.swift in Sources */,
@@ -595,6 +614,7 @@
 			files = (
 				F9B0406C285F7C4F0026947D /* Mock.generated.swift in Sources */,
 				F9B04069285F7B110026947D /* BitfinexTickersParamsTests.swift in Sources */,
+				F9B04070285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import SwiftyMocky
 
 @testable import crypto_marketplace
 

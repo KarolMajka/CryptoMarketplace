@@ -11,20 +11,23 @@ import RxCocoa
 import RxRelay
 
 final class CryptoMarketplaceViewModel {
+    typealias ModelWithCell = (model: BitfinexTicker, cellViewModel: CryptoMarketplaceCellViewModel)
 
     let input = Input()
     let output = Output()
 
     private let disposeBag = DisposeBag()
 
-    private let products: BehaviorRelay<[BitfinexTicker]> = .init(value: [])
+    private let models: BehaviorRelay<[BitfinexTicker]> = .init(value: [])
+    private let cells: BehaviorRelay<[ModelWithCell]> = .init(value: [])
 
     struct Dependencies {
         let service: BitfinexService
+        let searchFilter: CryptoMarketplaceSearchFilter
     }
     private let dependencies: Dependencies
 
-    init(dependencies: Dependencies = .init(service: .init())) {
+    init(dependencies: Dependencies = .init(service: .init(), searchFilter: CryptoMarketplaceSearchFilterContains())) {
         self.dependencies = dependencies
         setupRxObservers()
     }
@@ -35,9 +38,9 @@ private extension CryptoMarketplaceViewModel {
     func setupRxObservers() {
         setupViewInputs()
 
-        products
-            .map { $0.map { CryptoMarketplaceCellViewModel(ticker: $0) } }
-            .bind(to: output.view.cellViewModelsSubject)
+        models
+            .map { $0.map { ($0, CryptoMarketplaceCellViewModel(ticker: $0)) } }
+            .bind(to: cells)
             .disposed(by: disposeBag)
     }
 
@@ -48,6 +51,17 @@ private extension CryptoMarketplaceViewModel {
                 self.fetchCrypto()
             })
             .disposed(by: disposeBag)
+
+        Observable.combineLatest(cells, input.view.searchText.distinctUntilChanged())
+            .map { [weak self] cells, searchText in
+                cells
+                    .filter { [weak self] in
+                        self?.dependencies.searchFilter.filter(model: $0.model, searchText: searchText) ?? true
+                    }
+                    .map { $0.cellViewModel }
+            }
+            .bind(to: output.view.cellViewModelsSubject)
+            .disposed(by: disposeBag)
     }
 }
 
@@ -57,11 +71,11 @@ private extension CryptoMarketplaceViewModel {
         let coinPairs = CryptoMarketplaceCoinPairsBuilder().buildSupportedCoinPairs()
         let params: BitfinexTickersParams = .init(symbols: .init(coinPairs: coinPairs))
         dependencies.service.getTickers(params: params)
-            .trackActivity(self.products.value.isEmpty ? output.view.activityIndicator : nil)
+            .trackActivity(self.models.value.isEmpty ? output.view.activityIndicator : nil)
             .subscribe(with: self, onSuccess: { (self, response) in
-                self.products.accept(response.tickers)
+                self.models.accept(response.tickers)
             }, onFailure: { (self, error) in
-                if self.products.value.isEmpty {
+                if self.models.value.isEmpty {
                     self.output.view.errorAlertSubject.accept(error.localizedDescription)
                 } else {
                     self.output.view.errorMessageSubject.accept(error.localizedDescription)
@@ -79,6 +93,7 @@ extension CryptoMarketplaceViewModel {
 
         struct View {
             let fetchData = PublishSubject<Void>()
+            let searchText = PublishSubject<String?>()
         }
     }
 }
@@ -97,7 +112,6 @@ extension CryptoMarketplaceViewModel {
             fileprivate let cellViewModelsSubject = BehaviorRelay<[CellViewModel]>(value: [])
             fileprivate let errorMessageSubject = BehaviorRelay<String?>(value: nil)
             fileprivate let errorAlertSubject = BehaviorRelay<String?>(value: nil)
-
         }
     }
 }

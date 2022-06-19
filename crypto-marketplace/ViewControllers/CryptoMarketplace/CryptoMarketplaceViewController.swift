@@ -13,6 +13,7 @@ final class CryptoMarketplaceViewController: UIViewController {
 
     private let tableView = UITableView()
     private let activityIndicatorView = UIActivityIndicatorView()
+    private let searchController = UISearchController()
 
     private let disposeBag = DisposeBag()
     private let viewModel: CryptoMarketplaceViewModel
@@ -36,6 +37,7 @@ final class CryptoMarketplaceViewController: UIViewController {
     private func prepareViews() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Crypto Marketplace"
+        navigationItem.searchController = searchController
         view.backgroundColor = .white
 
         tableView.register(CryptoMarketplaceTableViewCell.self)
@@ -70,6 +72,10 @@ final class CryptoMarketplaceViewController: UIViewController {
 
         viewModel.output.view.activityIndicator
             .drive(activityIndicatorView.rx.isAnimating)
+            .disposed(by: disposeBag)
+
+        searchController.searchBar.rx.text
+            .bind(to: viewModel.input.view.searchText)
             .disposed(by: disposeBag)
     }
 }

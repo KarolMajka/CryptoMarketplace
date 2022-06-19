@@ -26,6 +26,42 @@ struct BitfinexTicker: Decodable {
     let low: Double
     let frrAmountAvailable: Double?
 
+    init(
+        symbol: String,
+        coins: BitfinexCoinPair,
+        ffr: Double?,
+        bid: Double,
+        bidPeriod: Double?,
+        bidSize: Double,
+        ask: Double,
+        askPeriod: Double?,
+        askSize: Double,
+        dailyChange: Double,
+        dailyChangeRelative: Double,
+        lastPrice: Double,
+        volume: Double,
+        high: Double,
+        low: Double,
+        frrAmountAvailable: Double?
+    ) {
+        self.symbol = symbol
+        self.coins = coins
+        self.ffr = ffr
+        self.bid = bid
+        self.bidPeriod = bidPeriod
+        self.bidSize = bidSize
+        self.ask = ask
+        self.askPeriod = askPeriod
+        self.askSize = askSize
+        self.dailyChange = dailyChange
+        self.dailyChangeRelative = dailyChangeRelative
+        self.lastPrice = lastPrice
+        self.volume = volume
+        self.high = high
+        self.low = low
+        self.frrAmountAvailable = frrAmountAvailable
+    }
+
     init(from decoder: Decoder) throws {
         var container = try decoder.unkeyedContainer()
 
