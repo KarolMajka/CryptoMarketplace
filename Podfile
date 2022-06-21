@@ -14,6 +14,7 @@ def shared_pods
   # UI
   pod 'SnapKit'
   pod 'Kingfisher'
+  pod 'Keyboard+LayoutGuide'
 
   # Networking
   pod 'Moya/RxSwift'

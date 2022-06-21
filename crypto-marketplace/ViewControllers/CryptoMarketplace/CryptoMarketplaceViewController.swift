@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import KeyboardLayoutGuide
 import RxSwift
 
 final class CryptoMarketplaceViewController: UIViewController {
@@ -38,13 +39,13 @@ final class CryptoMarketplaceViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Crypto Marketplace"
         navigationItem.searchController = searchController
-        view.backgroundColor = .white
 
         tableView.register(CryptoMarketplaceTableViewCell.self)
         tableView.separatorStyle = .none
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.left.right.top.equalToSuperview()
+            $0.bottom.equalTo(view.keyboardLayoutGuideNoSafeArea.snp.top)
         }
 
         activityIndicatorView.hidesWhenStopped = true

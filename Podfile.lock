@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.1)
+  - "Keyboard+LayoutGuide (1.6.0)"
   - Kingfisher (7.2.4)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
@@ -24,6 +25,7 @@ PODS:
     - Sourcery (= 1.6.0)
 
 DEPENDENCIES:
+  - "Keyboard+LayoutGuide"
   - Kingfisher
   - Moya/RxSwift
   - RxBlocking
@@ -38,6 +40,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - "Keyboard+LayoutGuide"
     - Kingfisher
     - Moya
     - RxBlocking
@@ -53,6 +56,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  "Keyboard+LayoutGuide": db44b1764e2bb5d9824cc9cea9d9006cd4442045
   Kingfisher: 2457be2121734e69e54a2312ecc0150eb9ae70b3
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
@@ -66,6 +70,6 @@ SPEC CHECKSUMS:
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
   SwiftyMocky: 014739247afadb65efb5bb92ede32c22b9365762
 
-PODFILE CHECKSUM: 51e94df99a2f8af815f2cee29ee98ea7ce11dac8
+PODFILE CHECKSUM: 9754e770e6996319e3639924d96be55b0b3079e4
 
 COCOAPODS: 1.11.3
