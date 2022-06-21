@@ -10,6 +10,10 @@ import Foundation
 struct BitfinexTickersResponse: Decodable {
     let tickers: [BitfinexTicker]
 
+    init(tickers: [BitfinexTicker]) {
+        self.tickers = tickers
+    }
+
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         tickers = try container.decode([BitfinexTicker].self)

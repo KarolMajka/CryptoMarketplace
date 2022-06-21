@@ -22,4 +22,12 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         appCoordinator = AppCoordinator(dependencies: .init(presentation: .window(window: window, transition: nil)))
         appCoordinator.start()
     }
+
+    func sceneDidBecomeActive(_ scene: UIScene) {
+        AppNotificationDispatcher.shared.dispatch(.sceneDidBecomeActive)
+    }
+
+    func sceneWillResignActive(_ scene: UIScene) {
+        AppNotificationDispatcher.shared.dispatch(.sceneWillResignActive)
+    }
 }

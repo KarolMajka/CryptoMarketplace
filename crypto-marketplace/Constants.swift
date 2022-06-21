@@ -26,3 +26,9 @@ extension Constants.API {
         static let pairsSeparator = ","
     }
 }
+
+extension Constants {
+    enum CryptoMarketplace {
+        static let refreshTimeIntervalInSeconds: TimeInterval = 5
+    }
+}

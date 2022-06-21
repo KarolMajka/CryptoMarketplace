@@ -7,6 +7,7 @@
 
 import Foundation
 
+// sourcery: AutoMockable
 protocol CryptoMarketplaceSearchFilter {
     func filter(model: BitfinexTicker, searchText: String?) -> Bool
 }

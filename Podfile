@@ -28,7 +28,9 @@ target 'crypto-marketplace' do
   target 'crypto-marketplaceTests' do
     inherit! :search_paths
 
-    pod "SwiftyMocky"
+    pod 'SwiftyMocky'
+    pod 'RxTest'
+    pod 'RxBlocking'
   end
 
 end

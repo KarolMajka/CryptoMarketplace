@@ -52,6 +52,15 @@
 		F9B0406E285F8CFF0026947D /* CryptoMarketplaceSearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0406D285F8CFF0026947D /* CryptoMarketplaceSearchFilter.swift */; };
 		F9B04070285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0406F285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift */; };
 		F9B04073285F97220026947D /* CryptoMarketplaceSearchFilterContains.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04072285F97220026947D /* CryptoMarketplaceSearchFilterContains.swift */; };
+		F9B04076285F9C490026947D /* AppNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04075285F9C490026947D /* AppNotification.swift */; };
+		F9B0407A285F9D1F0026947D /* AppNotificationDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04079285F9D1F0026947D /* AppNotificationDispatcher.swift */; };
+		F9B0407C285F9D270026947D /* AppNotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0407B285F9D270026947D /* AppNotificationObserver.swift */; };
+		F9B0407E285F9FBD0026947D /* AppNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0407D285F9FBD0026947D /* AppNotificationTests.swift */; };
+		F9B8DCAE2861BFC500D93CB4 /* CryptoMarketplaceTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8DCAD2861BFC500D93CB4 /* CryptoMarketplaceTimer.swift */; };
+		F9B8DCB02861C08A00D93CB4 /* CryptoMarketplaceTimerContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8DCAF2861C08A00D93CB4 /* CryptoMarketplaceTimerContractor.swift */; };
+		F9B8DCB42861C3EA00D93CB4 /* CryptoMarketplaceCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8DCB32861C3EA00D93CB4 /* CryptoMarketplaceCellViewModelTests.swift */; };
+		F9B8DCB82861CDEE00D93CB4 /* CryptoMarketplaceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8DCB72861CDEE00D93CB4 /* CryptoMarketplaceViewModelTests.swift */; };
+		F9B8DCBA28620C3600D93CB4 /* ObservableType+withPrevious.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8DCB928620C3600D93CB4 /* ObservableType+withPrevious.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +128,15 @@
 		F9B0406D285F8CFF0026947D /* CryptoMarketplaceSearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceSearchFilter.swift; sourceTree = "<group>"; };
 		F9B0406F285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceSearchFilterContainsTests.swift; sourceTree = "<group>"; };
 		F9B04072285F97220026947D /* CryptoMarketplaceSearchFilterContains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceSearchFilterContains.swift; sourceTree = "<group>"; };
+		F9B04075285F9C490026947D /* AppNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotification.swift; sourceTree = "<group>"; };
+		F9B04079285F9D1F0026947D /* AppNotificationDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificationDispatcher.swift; sourceTree = "<group>"; };
+		F9B0407B285F9D270026947D /* AppNotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificationObserver.swift; sourceTree = "<group>"; };
+		F9B0407D285F9FBD0026947D /* AppNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotificationTests.swift; sourceTree = "<group>"; };
+		F9B8DCAD2861BFC500D93CB4 /* CryptoMarketplaceTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceTimer.swift; sourceTree = "<group>"; };
+		F9B8DCAF2861C08A00D93CB4 /* CryptoMarketplaceTimerContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceTimerContractor.swift; sourceTree = "<group>"; };
+		F9B8DCB32861C3EA00D93CB4 /* CryptoMarketplaceCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceCellViewModelTests.swift; sourceTree = "<group>"; };
+		F9B8DCB72861CDEE00D93CB4 /* CryptoMarketplaceViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceViewModelTests.swift; sourceTree = "<group>"; };
+		F9B8DCB928620C3600D93CB4 /* ObservableType+withPrevious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+withPrevious.swift"; sourceTree = "<group>"; };
 		FDA7453C1E8A7B4E2FF4606E /* Pods-crypto-marketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-marketplace.debug.xcconfig"; path = "Target Support Files/Pods-crypto-marketplace/Pods-crypto-marketplace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +214,7 @@
 				F9481347285EF34700A0EAE8 /* ViewControllers */,
 				F9481325285D200C00A0EAE8 /* Models */,
 				F9481312285D113D00A0EAE8 /* Networking */,
+				F9B04074285F9C340026947D /* AppNotification */,
 				F9481340285E712A00A0EAE8 /* Extensions */,
 				F9481316285D170100A0EAE8 /* Resources */,
 				F9481315285D16D900A0EAE8 /* SwiftGen */,
@@ -208,8 +227,9 @@
 			isa = PBXGroup;
 			children = (
 				F9B0406A285F7BC10026947D /* Mocks */,
-				F9B04068285F7B110026947D /* BitfinexTickersParamsTests.swift */,
-				F9B0406F285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift */,
+				F9B8DCB52861C3FD00D93CB4 /* Networking */,
+				F9B8DCB62861C40900D93CB4 /* ViewControllers */,
+				F9B0407D285F9FBD0026947D /* AppNotificationTests.swift */,
 			);
 			path = "crypto-marketplaceTests";
 			sourceTree = "<group>";
@@ -301,6 +321,7 @@
 				F9481362285F548800A0EAE8 /* UITableView+Register.swift */,
 				F948136B285F5A8F00A0EAE8 /* Observable+FilterNill.swift */,
 				F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */,
+				F9B8DCB928620C3600D93CB4 /* ObservableType+withPrevious.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,6 +337,7 @@
 		F9481348285EF35E00A0EAE8 /* CryptoMarketplace */ = {
 			isa = PBXGroup;
 			children = (
+				F9B8DCAC2861BF9900D93CB4 /* CryptoMarketplaceTimer */,
 				F9B04071285F97110026947D /* CryptoMarketplaceSearchFilter */,
 				F948135A285F1A3E00A0EAE8 /* Cell */,
 				F9481349285EF39700A0EAE8 /* CryptoMarketplaceViewController.swift */,
@@ -361,6 +383,51 @@
 				F9B04072285F97220026947D /* CryptoMarketplaceSearchFilterContains.swift */,
 			);
 			path = CryptoMarketplaceSearchFilter;
+			sourceTree = "<group>";
+		};
+		F9B04074285F9C340026947D /* AppNotification */ = {
+			isa = PBXGroup;
+			children = (
+				F9B04075285F9C490026947D /* AppNotification.swift */,
+				F9B04079285F9D1F0026947D /* AppNotificationDispatcher.swift */,
+				F9B0407B285F9D270026947D /* AppNotificationObserver.swift */,
+			);
+			path = AppNotification;
+			sourceTree = "<group>";
+		};
+		F9B8DCAC2861BF9900D93CB4 /* CryptoMarketplaceTimer */ = {
+			isa = PBXGroup;
+			children = (
+				F9B8DCAF2861C08A00D93CB4 /* CryptoMarketplaceTimerContractor.swift */,
+				F9B8DCAD2861BFC500D93CB4 /* CryptoMarketplaceTimer.swift */,
+			);
+			path = CryptoMarketplaceTimer;
+			sourceTree = "<group>";
+		};
+		F9B8DCB22861C3D800D93CB4 /* CryptoMarketplace */ = {
+			isa = PBXGroup;
+			children = (
+				F9B0406F285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift */,
+				F9B8DCB32861C3EA00D93CB4 /* CryptoMarketplaceCellViewModelTests.swift */,
+				F9B8DCB72861CDEE00D93CB4 /* CryptoMarketplaceViewModelTests.swift */,
+			);
+			path = CryptoMarketplace;
+			sourceTree = "<group>";
+		};
+		F9B8DCB52861C3FD00D93CB4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F9B04068285F7B110026947D /* BitfinexTickersParamsTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F9B8DCB62861C40900D93CB4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9B8DCB22861C3D800D93CB4 /* CryptoMarketplace */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,7 +638,9 @@
 				F948133E285E6F2000A0EAE8 /* BitfinexTicker.swift in Sources */,
 				F9481342285E716F00A0EAE8 /* Collection+SafeAccess.swift in Sources */,
 				F948133C285E6EBF00A0EAE8 /* BitfinexTickersResponse.swift in Sources */,
+				F9B8DCBA28620C3600D93CB4 /* ObservableType+withPrevious.swift in Sources */,
 				F9481359285EF89700A0EAE8 /* ActivityIndicator.swift in Sources */,
+				F9B8DCAE2861BFC500D93CB4 /* CryptoMarketplaceTimer.swift in Sources */,
 				F948133A285DE80500A0EAE8 /* BitfinexError.swift in Sources */,
 				F948131D285D1ACC00A0EAE8 /* StringsGen.swift in Sources */,
 				F94812E3285CE73100A0EAE8 /* AppDelegate.swift in Sources */,
@@ -592,18 +661,22 @@
 				F948132D285D23D700A0EAE8 /* BitfinexTickerSymbolsParam.swift in Sources */,
 				F9B04067285F73D80026947D /* UIColor+AppearanceMode.swift in Sources */,
 				F9481346285EE30200A0EAE8 /* BitfinexCoinPair.swift in Sources */,
+				F9B0407A285F9D1F0026947D /* AppNotificationDispatcher.swift in Sources */,
 				F9481363285F548800A0EAE8 /* UITableView+Register.swift in Sources */,
 				F9B0406E285F8CFF0026947D /* CryptoMarketplaceSearchFilter.swift in Sources */,
 				F9481344285E725800A0EAE8 /* JSONDecoder+Default.swift in Sources */,
 				F9481355285EF7A700A0EAE8 /* UIWindow+RootViewController.swift in Sources */,
 				F948132F285D242400A0EAE8 /* NetworkingParam.swift in Sources */,
+				F9B8DCB02861C08A00D93CB4 /* CryptoMarketplaceTimerContractor.swift in Sources */,
 				F948136C285F5A8F00A0EAE8 /* Observable+FilterNill.swift in Sources */,
 				F9481357285EF7DF00A0EAE8 /* CryptoMarketplaceCoinPairsBuilder.swift in Sources */,
 				F9481314285D117B00A0EAE8 /* Constants.swift in Sources */,
 				F9481365285F552900A0EAE8 /* ReusableView.swift in Sources */,
+				F9B0407C285F9D270026947D /* AppNotificationObserver.swift in Sources */,
 				F9481353285EF68A00A0EAE8 /* Coordinator.swift in Sources */,
 				F948134A285EF39800A0EAE8 /* CryptoMarketplaceViewController.swift in Sources */,
 				F9481329285D221E00A0EAE8 /* BitfinexCoinType.swift in Sources */,
+				F9B04076285F9C490026947D /* AppNotification.swift in Sources */,
 				F948135E285F27AA00A0EAE8 /* CryptoMarketplaceCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,7 +685,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B8DCB42861C3EA00D93CB4 /* CryptoMarketplaceCellViewModelTests.swift in Sources */,
+				F9B0407E285F9FBD0026947D /* AppNotificationTests.swift in Sources */,
 				F9B0406C285F7C4F0026947D /* Mock.generated.swift in Sources */,
+				F9B8DCB82861CDEE00D93CB4 /* CryptoMarketplaceViewModelTests.swift in Sources */,
 				F9B04069285F7B110026947D /* BitfinexTickersParamsTests.swift in Sources */,
 				F9B04070285F94780026947D /* CryptoMarketplaceSearchFilterContainsTests.swift in Sources */,
 			);

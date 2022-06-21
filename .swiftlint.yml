@@ -25,3 +25,6 @@ type_name:
   max_length:
     warning: 50
     error: 60
+type_body_length:
+  warning: 350
+  error: 600

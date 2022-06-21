@@ -11,7 +11,7 @@ import XCTest
 
 final class CryptoMarketplaceSearchFilterContainsTests: XCTestCase {
 
-    let sut = CryptoMarketplaceSearchFilterContains()
+    let sut: CryptoMarketplaceSearchFilter = CryptoMarketplaceSearchFilterContains()
 
     func testEmptySearch() {
         let model = buildModel(coins: (.btc, .usd))
