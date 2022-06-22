@@ -18,7 +18,7 @@ extension BitfinexError: LocalizedError {
         case .server(let error):
             return error.message
         case .symbolNotRecognized(let symbol):
-            return "Symbol \(symbol) not recognized"
+            return L10n.BitfinexError.symbolNotRecognized(symbol)
         }
     }
 }

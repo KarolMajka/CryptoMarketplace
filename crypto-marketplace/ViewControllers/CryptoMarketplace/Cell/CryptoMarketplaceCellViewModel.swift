@@ -18,7 +18,7 @@ final class CryptoMarketplaceCellViewModel: CellViewModel {
 
         output = .init(cell: .init(
             leftCoinText: ticker.coins.leftCoin.ticker,
-            rightCoinText: "/\(ticker.coins.rightCoin?.ticker ?? "")",
+            rightCoinText: L10n.CryptoMarketplace.Cell.rightCoinText(ticker.coins.rightCoin?.ticker ?? ""),
             lastPriceText: ticker.lastPrice.formatted(.number),
             lastPriceColor: lastPriceChange,
             priceChangeText: ticker.dailyChangeRelative.formatted(.percent.sign(strategy: .always()).precision(.fractionLength(2))),

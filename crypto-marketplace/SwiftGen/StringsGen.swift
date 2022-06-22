@@ -10,6 +10,24 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+
+  internal enum BitfinexError {
+    /// Symbol %@ not recognized
+    internal static func symbolNotRecognized(_ p1: Any) -> String {
+      return L10n.tr("Localizable", "BitfinexError.SymbolNotRecognized", String(describing: p1))
+    }
+  }
+
+  internal enum CryptoMarketplace {
+    /// Crypto Marketplace
+    internal static let viewTitle = L10n.tr("Localizable", "CryptoMarketplace.ViewTitle")
+    internal enum Cell {
+      /// /%@
+      internal static func rightCoinText(_ p1: Any) -> String {
+        return L10n.tr("Localizable", "CryptoMarketplace.Cell.RightCoinText", String(describing: p1))
+      }
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

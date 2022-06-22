@@ -45,7 +45,7 @@ final class CryptoMarketplaceViewController: UIViewController {
 
     private func prepareViews() {
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Crypto Marketplace"
+        navigationItem.title = L10n.CryptoMarketplace.viewTitle
         navigationItem.searchController = searchController
 
         tableView.contentInset.bottom = 8

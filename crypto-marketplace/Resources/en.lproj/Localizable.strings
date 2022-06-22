@@ -5,3 +5,10 @@
   Created by Karol Majka on 17/06/2022.
   
 */
+
+// BitfinexError
+"BitfinexError.SymbolNotRecognized" = "Symbol %@ not recognized";
+
+// CryptoMarketplace
+"CryptoMarketplace.ViewTitle" = "Crypto Marketplace";
+"CryptoMarketplace.Cell.RightCoinText" = "/%@";
