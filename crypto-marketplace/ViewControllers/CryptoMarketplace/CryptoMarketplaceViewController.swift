@@ -15,6 +15,7 @@ final class CryptoMarketplaceViewController: UIViewController {
     private let tableView = UITableView()
     private let activityIndicatorView = UIActivityIndicatorView()
     private let searchController = UISearchController()
+    private let alertBannerView = AlertBannerView()
 
     private let disposeBag = DisposeBag()
     private let viewModel: CryptoMarketplaceViewModel
@@ -35,11 +36,20 @@ final class CryptoMarketplaceViewController: UIViewController {
         viewModel.input.view.fetchData.onNext(())
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if alertBannerView.superview == nil {
+            alertBannerView.addToViewController(self)
+        }
+    }
+
     private func prepareViews() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Crypto Marketplace"
         navigationItem.searchController = searchController
 
+        tableView.contentInset.bottom = 8
+        tableView.contentInset.top = 24
         tableView.register(CryptoMarketplaceTableViewCell.self)
         tableView.separatorStyle = .none
         view.addSubview(tableView)
@@ -73,6 +83,17 @@ final class CryptoMarketplaceViewController: UIViewController {
 
         viewModel.output.view.activityIndicator
             .drive(activityIndicatorView.rx.isAnimating)
+            .disposed(by: disposeBag)
+
+        viewModel.output.view.errorMessage
+            .drive(with: self, onNext: { (self, errorMessage) in
+                if let errorMessage = errorMessage {
+                    self.alertBannerView.setErrorMessage(errorMessage)
+                    self.alertBannerView.present()
+                } else {
+                    self.alertBannerView.dismiss()
+                }
+            })
             .disposed(by: disposeBag)
 
         searchController.searchBar.rx.text

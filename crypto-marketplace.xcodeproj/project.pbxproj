@@ -61,6 +61,7 @@
 		F9B8DCB42861C3EA00D93CB4 /* CryptoMarketplaceCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8DCB32861C3EA00D93CB4 /* CryptoMarketplaceCellViewModelTests.swift */; };
 		F9B8DCB82861CDEE00D93CB4 /* CryptoMarketplaceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8DCB72861CDEE00D93CB4 /* CryptoMarketplaceViewModelTests.swift */; };
 		F9B8DCBA28620C3600D93CB4 /* ObservableType+withPrevious.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8DCB928620C3600D93CB4 /* ObservableType+withPrevious.swift */; };
+		F9B8DCBE2862681400D93CB4 /* AlertBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8DCBD2862681400D93CB4 /* AlertBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		F9B8DCB32861C3EA00D93CB4 /* CryptoMarketplaceCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceCellViewModelTests.swift; sourceTree = "<group>"; };
 		F9B8DCB72861CDEE00D93CB4 /* CryptoMarketplaceViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoMarketplaceViewModelTests.swift; sourceTree = "<group>"; };
 		F9B8DCB928620C3600D93CB4 /* ObservableType+withPrevious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+withPrevious.swift"; sourceTree = "<group>"; };
+		F9B8DCBD2862681400D93CB4 /* AlertBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBannerView.swift; sourceTree = "<group>"; };
 		FDA7453C1E8A7B4E2FF4606E /* Pods-crypto-marketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crypto-marketplace.debug.xcconfig"; path = "Target Support Files/Pods-crypto-marketplace/Pods-crypto-marketplace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -329,6 +331,7 @@
 		F9481347285EF34700A0EAE8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F9B8DCBF2862681C00D93CB4 /* Common */,
 				F9481348285EF35E00A0EAE8 /* CryptoMarketplace */,
 			);
 			path = ViewControllers;
@@ -428,6 +431,22 @@
 				F9B8DCB22861C3D800D93CB4 /* CryptoMarketplace */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9B8DCBF2862681C00D93CB4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F9B8DCC02862682400D93CB4 /* AlertBanner */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F9B8DCC02862682400D93CB4 /* AlertBanner */ = {
+			isa = PBXGroup;
+			children = (
+				F9B8DCBD2862681400D93CB4 /* AlertBannerView.swift */,
+			);
+			path = AlertBanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -656,6 +675,7 @@
 				F9481350285EF5FE00A0EAE8 /* AppCoordinator.swift in Sources */,
 				F9481335285DE7C000A0EAE8 /* Response+ErrorHandling.swift in Sources */,
 				F9481331285D259600A0EAE8 /* NetworkingParams.swift in Sources */,
+				F9B8DCBE2862681400D93CB4 /* AlertBannerView.swift in Sources */,
 				F9481323285D1E5500A0EAE8 /* BitfinexService.swift in Sources */,
 				F948132B285D235100A0EAE8 /* BitfinexTickersParams.swift in Sources */,
 				F948132D285D23D700A0EAE8 /* BitfinexTickerSymbolsParam.swift in Sources */,
