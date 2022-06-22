@@ -46,6 +46,10 @@
 		F9481365285F552900A0EAE8 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481364285F552900A0EAE8 /* ReusableView.swift */; };
 		F948136A285F56CA00A0EAE8 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9481369285F56CA00A0EAE8 /* CellViewModel.swift */; };
 		F948136C285F5A8F00A0EAE8 /* Observable+FilterNill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F948136B285F5A8F00A0EAE8 /* Observable+FilterNill.swift */; };
+		F96131DF2863B3710006ED25 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96131DE2863B3710006ED25 /* UIColor+Colors.swift */; };
+		F96131E12863B3B90006ED25 /* CGFloat+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96131E02863B3B90006ED25 /* CGFloat+Spacing.swift */; };
+		F96131E32863B79E0006ED25 /* Elevation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96131E22863B79E0006ED25 /* Elevation.swift */; };
+		F96131E52863BBC50006ED25 /* UIFont+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96131E42863BBC50006ED25 /* UIFont+Fonts.swift */; };
 		F9B04067285F73D80026947D /* UIColor+AppearanceMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */; };
 		F9B04069285F7B110026947D /* BitfinexTickersParamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B04068285F7B110026947D /* BitfinexTickersParamsTests.swift */; };
 		F9B0406C285F7C4F0026947D /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0406B285F7C4F0026947D /* Mock.generated.swift */; };
@@ -123,6 +127,10 @@
 		F9481364285F552900A0EAE8 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		F9481369285F56CA00A0EAE8 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		F948136B285F5A8F00A0EAE8 /* Observable+FilterNill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+FilterNill.swift"; sourceTree = "<group>"; };
+		F96131DE2863B3710006ED25 /* UIColor+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
+		F96131E02863B3B90006ED25 /* CGFloat+Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Spacing.swift"; sourceTree = "<group>"; };
+		F96131E22863B79E0006ED25 /* Elevation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elevation.swift; sourceTree = "<group>"; };
+		F96131E42863BBC50006ED25 /* UIFont+Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Fonts.swift"; sourceTree = "<group>"; };
 		F9B04066285F73D80026947D /* UIColor+AppearanceMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppearanceMode.swift"; sourceTree = "<group>"; };
 		F9B04068285F7B110026947D /* BitfinexTickersParamsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitfinexTickersParamsTests.swift; sourceTree = "<group>"; };
 		F9B0406B285F7C4F0026947D /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
@@ -212,9 +220,9 @@
 				F94812E2285CE73100A0EAE8 /* AppDelegate.swift */,
 				F948134F285EF5FE00A0EAE8 /* AppCoordinator.swift */,
 				F94812E4285CE73100A0EAE8 /* SceneDelegate.swift */,
+				F96131DD2863B3630006ED25 /* DesignSystem */,
 				F9481351285EF60B00A0EAE8 /* Base */,
 				F9481347285EF34700A0EAE8 /* ViewControllers */,
-				F9481325285D200C00A0EAE8 /* Models */,
 				F9481312285D113D00A0EAE8 /* Networking */,
 				F9B04074285F9C340026947D /* AppNotification */,
 				F9481340285E712A00A0EAE8 /* Extensions */,
@@ -283,13 +291,6 @@
 				F9481337285DE7F900A0EAE8 /* BitfinexErrorResponse.swift */,
 				F9481339285DE80500A0EAE8 /* BitfinexError.swift */,
 				F948133F285E6F2600A0EAE8 /* Ticker */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F9481325285D200C00A0EAE8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -369,6 +370,17 @@
 				F948135F285F2DA200A0EAE8 /* CryptoMarketplacePriceChange.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		F96131DD2863B3630006ED25 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				F96131DE2863B3710006ED25 /* UIColor+Colors.swift */,
+				F96131E42863BBC50006ED25 /* UIFont+Fonts.swift */,
+				F96131E02863B3B90006ED25 /* CGFloat+Spacing.swift */,
+				F96131E22863B79E0006ED25 /* Elevation.swift */,
+			);
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 		F9B0406A285F7BC10026947D /* Mocks */ = {
@@ -655,6 +667,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F948133E285E6F2000A0EAE8 /* BitfinexTicker.swift in Sources */,
+				F96131DF2863B3710006ED25 /* UIColor+Colors.swift in Sources */,
 				F9481342285E716F00A0EAE8 /* Collection+SafeAccess.swift in Sources */,
 				F948133C285E6EBF00A0EAE8 /* BitfinexTickersResponse.swift in Sources */,
 				F9B8DCBA28620C3600D93CB4 /* ObservableType+withPrevious.swift in Sources */,
@@ -671,9 +684,11 @@
 				F9481338285DE7F900A0EAE8 /* BitfinexErrorResponse.swift in Sources */,
 				F94812E5285CE73100A0EAE8 /* SceneDelegate.swift in Sources */,
 				F948134C285EF3AB00A0EAE8 /* CryptoMarketplaceViewModel.swift in Sources */,
+				F96131E12863B3B90006ED25 /* CGFloat+Spacing.swift in Sources */,
 				F9481321285D1E4C00A0EAE8 /* BitfinexTarget.swift in Sources */,
 				F9481350285EF5FE00A0EAE8 /* AppCoordinator.swift in Sources */,
 				F9481335285DE7C000A0EAE8 /* Response+ErrorHandling.swift in Sources */,
+				F96131E32863B79E0006ED25 /* Elevation.swift in Sources */,
 				F9481331285D259600A0EAE8 /* NetworkingParams.swift in Sources */,
 				F9B8DCBE2862681400D93CB4 /* AlertBannerView.swift in Sources */,
 				F9481323285D1E5500A0EAE8 /* BitfinexService.swift in Sources */,
@@ -690,6 +705,7 @@
 				F9B8DCB02861C08A00D93CB4 /* CryptoMarketplaceTimerContractor.swift in Sources */,
 				F948136C285F5A8F00A0EAE8 /* Observable+FilterNill.swift in Sources */,
 				F9481357285EF7DF00A0EAE8 /* CryptoMarketplaceCoinPairsBuilder.swift in Sources */,
+				F96131E52863BBC50006ED25 /* UIFont+Fonts.swift in Sources */,
 				F9481314285D117B00A0EAE8 /* Constants.swift in Sources */,
 				F9481365285F552900A0EAE8 /* ReusableView.swift in Sources */,
 				F9B0407C285F9D270026947D /* AppNotificationObserver.swift in Sources */,

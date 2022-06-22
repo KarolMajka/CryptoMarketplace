@@ -15,22 +15,22 @@ enum CryptoMarketplacePriceChange {
     var backgroundColor: UIColor {
         switch self {
         case .up:
-            return .init(red: 95/255, green: 186/255, blue: 137/255, alpha: 1)
+            return .red
         case .down:
-            return .init(red: 227/255, green: 84/255, blue: 97/255, alpha: 1)
+            return .green
         case .unchanged:
-            return .init(red: 134/255, green: 141/255, blue: 154/255, alpha: 1)
+            return .grayBackground
         }
     }
 
     var textColor: UIColor {
         switch self {
         case .up:
-            return .init(red: 95/255, green: 186/255, blue: 137/255, alpha: 1)
+            return .green
         case .down:
-            return .init(red: 227/255, green: 84/255, blue: 97/255, alpha: 1)
+            return .red
         case .unchanged:
-            return .init(light: .black, dark: .white)
+            return .primaryText
         }
     }
 

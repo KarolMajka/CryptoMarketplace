@@ -18,9 +18,9 @@ final class AlertBannerView: UIView {
 
     private let errorMessageLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 13, weight: .semibold)
+        label.textColor = .neutralWhite
+        label.font = .body
         label.numberOfLines = 0
-        label.textColor = .white
         label.textAlignment = .center
         return label
     }()
@@ -75,12 +75,12 @@ final class AlertBannerView: UIView {
 
     private func prepareViews() {
         alpha = 0
-        backgroundColor = .init(red: 227/255, green: 84/255, blue: 97/255, alpha: 1)
+        backgroundColor = .red
 
         addSubview(errorMessageLabel)
         errorMessageLabel.snp.makeConstraints {
-            $0.left.right.equalToSuperview().inset(16)
-            $0.bottom.top.equalToSuperview().inset(4)
+            $0.left.right.equalToSuperview().inset(CGFloat.s)
+            $0.bottom.top.equalToSuperview().inset(CGFloat.xxxs)
         }
     }
 }

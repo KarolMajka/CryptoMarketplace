@@ -48,8 +48,8 @@ final class CryptoMarketplaceViewController: UIViewController {
         navigationItem.title = L10n.CryptoMarketplace.viewTitle
         navigationItem.searchController = searchController
 
-        tableView.contentInset.bottom = 8
-        tableView.contentInset.top = 24
+        tableView.contentInset.bottom = .xxs
+        tableView.contentInset.top = .l
         tableView.register(CryptoMarketplaceTableViewCell.self)
         tableView.separatorStyle = .none
         view.addSubview(tableView)

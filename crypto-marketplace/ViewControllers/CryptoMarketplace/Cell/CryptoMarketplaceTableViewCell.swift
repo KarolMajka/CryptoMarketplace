@@ -12,36 +12,35 @@ final class CryptoMarketplaceTableViewCell: UITableViewCell {
     private let leftCoinLabel: UILabel = {
         let label = UILabel()
         label.setContentHuggingPriority(.required, for: .horizontal)
-        label.font = .systemFont(ofSize: 18, weight: .medium)
+        label.textColor = .primaryText
+        label.font = .heading
         return label
     }()
     private let rightCoinLabel: UILabel = {
         let label = UILabel()
         label.setContentHuggingPriority(.required, for: .horizontal)
-        label.textColor = .init(light: .darkGray, dark: .lightGray)
-        label.font = .systemFont(ofSize: 13, weight: .semibold)
+        label.textColor = .secondaryText
+        label.font = .body
         return label
     }()
     private let lastPriceLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .primaryText
+        label.font = .subheading
         label.textAlignment = .right
-        label.font = .systemFont(ofSize: 16, weight: .medium)
         return label
     }()
     private let priceChangeView: UIView = {
         let view = UIView()
-        view.layer.cornerRadius = 4
-        view.layer.shadowColor = UIColor(light: .black, dark: .white).cgColor
-        view.layer.shadowRadius = 4
-        view.layer.shadowOffset = CGSize(width: 0, height: 1)
-        view.layer.shadowOpacity = 0.08
+        view.layer.cornerRadius = .xxxs
+        Elevation.small.apply(on: view)
         return view
     }()
     private let priceChangeLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .white
+        label.textColor = .neutralWhite
+        label.font = .subheading
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 16, weight: .medium)
         return label
     }()
 
@@ -80,12 +79,12 @@ final class CryptoMarketplaceTableViewCell: UITableViewCell {
         ])
         mainStackView.axis = .horizontal
         mainStackView.alignment = .center
-        mainStackView.spacing = 16
+        mainStackView.spacing = .s
 
         contentView.addSubview(mainStackView)
         mainStackView.snp.makeConstraints {
-            $0.left.right.equalToSuperview().inset(16)
-            $0.top.bottom.equalToSuperview().inset(8)
+            $0.left.right.equalToSuperview().inset(CGFloat.s)
+            $0.top.bottom.equalToSuperview().inset(CGFloat.xxs)
         }
     }
 
@@ -109,7 +108,7 @@ final class CryptoMarketplaceTableViewCell: UITableViewCell {
         ])
         coinsStackView.axis = .horizontal
         coinsStackView.alignment = .lastBaseline
-        coinsStackView.spacing = 4
+        coinsStackView.spacing = .xxxs
 
         return coinsStackView
     }
